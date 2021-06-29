@@ -21,6 +21,7 @@
   border-radius: 50%;
   object-fit: cover;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .shareInput {
@@ -55,12 +56,12 @@
 }
 
 .shareIcon {
-  font-style: 18px;
-  margin: 3px;
+  font-size: 18px;
+  margin-right: 3px;
 }
 
 .shareOptionText {
-  font-style: 14px;
+  font-size: 14px;
   font-weight: 500;
 }
 
@@ -70,7 +71,7 @@
   border-radius: 5px;
   background-color: green;
   font-weight: 500;
-  color: white;
   margin-right: 20px;
   cursor: pointer;
+  color: white;
 }
