@@ -26,8 +26,8 @@ const Profile = () => {
               />
             </div>
             <div className="profileInfo">
-              <h4 className="profileInfoName">Safak</h4>
-              <span className="profileInfoDesc">helo</span>
+              <h4 className="profileInfoName">Dheeraj Malviya</h4>
+              <span className="profileInfoDesc">Hello There!</span>
             </div>
           </div>
           <div className="profileRightBottom">

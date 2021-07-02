@@ -10,19 +10,24 @@ import {
   WorkOutline,
   Event,
   School,
+  Person,
 } from "@material-ui/icons";
 import { Users } from "../../dummyData";
 import CloseFriend from "../closeFriend/CloseFriend";
+import { Link } from "react-router-dom";
+import { auth } from "../../firebase";
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="sidebarWrapper">
         <ul className="sidebarList">
-          <li className="sidebarListItem">
-            <RssFeed className="sidebarIcon" />
-            <span className="sidebarListItemText">Feed</span>
-          </li>
+          <Link to="/" className="link">
+            <li className="sidebarListItem">
+              <RssFeed className="sidebarIcon" />
+              <span className="sidebarListItemText">Feed</span>
+            </li>
+          </Link>
           <li className="sidebarListItem">
             <Chat className="sidebarIcon" />
             <span className="sidebarListItemText">Chats</span>
@@ -55,8 +60,16 @@ const Sidebar = () => {
             <School className="sidebarIcon" />
             <span className="sidebarListItemText">Courses</span>
           </li>
+          <Link to="/profile" className="link">
+            <li className="sidebarListItem">
+              <Person className="sidebarIcon" />
+              <span className="sidebarListItemText">Profile</span>
+            </li>
+          </Link>
         </ul>
-        <button className="sidebarButton">Show More</button>
+        <button className="sidebarButton" onClick={() => auth.signOut()}>
+          Logout
+        </button>
         <hr className="sidebarHr" />
         <ul className="sidebarFriendList">
           {Users.map((user) => (

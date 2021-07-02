@@ -67,19 +67,17 @@
 .rightbarFollowings {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .rightbarFollowing {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   cursor: pointer;
 }
 
 .rightbarFollowingImg {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   border-radius: 5px;
   object-fit: cover;
 }

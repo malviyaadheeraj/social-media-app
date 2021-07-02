@@ -51,7 +51,7 @@
 .shareOption {
   display: flex;
   align-items: center;
-  margin-right: 15px;
+  margin-right: 20px;
   cursor: pointer;
 }
 
@@ -69,9 +69,13 @@
   border: none;
   padding: 7px;
   border-radius: 5px;
-  background-color: green;
+  background-color: rgb(0, 136, 0);
   font-weight: 500;
   margin-right: 20px;
   cursor: pointer;
   color: white;
+}
+
+.shareButton:hover {
+  background-color: rgb(3, 109, 3);
 }

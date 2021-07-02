@@ -42,16 +42,17 @@ const Rightbar = ({ profile }) => {
             <span className="rightbarInfoValue">Single</span>
           </div>
         </div>
-        <h4 className="rightbarTitle">User Friends </h4>
+        <h4 className="rightbarTitle">Photos </h4>
         <div className="rightbarFollowings">
-          <div className="rightbarFollowing">
-            <img
-              src="assets/person/1.jpeg"
-              alt=""
-              className="rightbarFollowingImg"
-            />
-            <span className="rightbarFollowingName">John</span>
-          </div>
+          {Users.map((user) => (
+            <div className="rightbarFollowing" key={user.id}>
+              <img
+                src={user.profilePicture}
+                alt=""
+                className="rightbarFollowingImg"
+              />
+            </div>
+          ))}
         </div>
       </>
     );
